@@ -15,7 +15,7 @@ C:/Users/keray/Unity3d/MemoryGame/MemoryRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54863
+61390
 Successfully changed project path to: C:/Users/keray/Unity3d/MemoryGame/MemoryRoom
 C:/Users/keray/Unity3d/MemoryGame/MemoryRoom
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/keray/Unity3d/MemoryGame/MemoryRoom
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13540] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2439997562 [EditorId] 2439997562 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GKT6A7J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14928] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2000744841 [EditorId] 2000744841 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GKT6A7J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13540] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2439997562 [EditorId] 2439997562 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GKT6A7J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14928] Host "[IP] 192.168.1.7 [Port] 0 [Flags] 2 [Guid] 2000744841 [EditorId] 2000744841 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GKT6A7J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -70,17 +70,17 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005691 seconds.
-- Loaded All Assemblies, in  0.265 seconds
+Registered in 0.006643 seconds.
+- Loaded All Assemblies, in  0.278 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.196 seconds
-Domain Reload Profiling: 461ms
-	BeginReloadAssembly (85ms)
+- Finished resetting the current domain, in  0.212 seconds
+Domain Reload Profiling: 489ms
+	BeginReloadAssembly (95ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -88,26 +88,26 @@ Domain Reload Profiling: 461ms
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (99ms)
-		LoadAssemblies (83ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (93ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (98ms)
-			TypeCache.Refresh (97ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (101ms)
+			TypeCache.Refresh (100ms)
+				TypeCache.ScanAssembly (90ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (197ms)
+	FinalizeReload (212ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (153ms)
+		SetupLoadedEditorAssemblies (165ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (100ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 461ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.465 seconds
-Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.502 seconds
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.424 seconds
-Domain Reload Profiling: 887ms
-	BeginReloadAssembly (111ms)
+- Finished resetting the current domain, in  0.473 seconds
+Domain Reload Profiling: 973ms
+	BeginReloadAssembly (122ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (24ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (289ms)
-		LoadAssemblies (214ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (310ms)
+		LoadAssemblies (235ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (140ms)
-			TypeCache.Refresh (123ms)
-				TypeCache.ScanAssembly (110ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
+		AnalyzeDomain (148ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (118ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (424ms)
+	FinalizeReload (473ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (306ms)
+		SetupLoadedEditorAssemblies (348ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (2ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (234ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (269ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3507 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (122.0 KB). Loaded Objects now: 3972.
-Memory consumption went from 132.9 MB to 132.7 MB.
-Total: 2.247400 ms (FindLiveObjects: 0.162400 ms CreateObjectMapping: 0.090700 ms MarkObjects: 1.890300 ms  DeleteObjects: 0.103100 ms)
+Unloading 51 unused Assets / (1.3 MB). Loaded Objects now: 3957.
+Memory consumption went from 132.8 MB to 131.5 MB.
+Total: 3.445500 ms (FindLiveObjects: 0.166000 ms CreateObjectMapping: 0.082500 ms MarkObjects: 2.526300 ms  DeleteObjects: 0.669900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,17 +180,201 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 928244.484653 seconds.
-  path: Assets/Materials/Border.mat
-  artifactKey: Guid(58c338fefb83b1243a573344927f1972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Border.mat using Guid(58c338fefb83b1243a573344927f1972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61517278db35b3fd8463c96d2cca1b24') in 0.141031 seconds
+  Time since last request: 937650.652895 seconds.
+  path: Assets/Materials/Bricks070.png
+  artifactKey: Guid(1c5b721d20cbac740aa7209da826ee83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bricks070.png using Guid(1c5b721d20cbac740aa7209da826ee83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '415863c33ad271addf6400d6cff92ac0') in 0.049309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 56.604262 seconds.
+  path: Assets/Materials/TextureBricks/Bricks070.png
+  artifactKey: Guid(a5c9c3b02034c5b4990a62d16585401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TextureBricks/Bricks070.png using Guid(a5c9c3b02034c5b4990a62d16585401a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdd943c7887c63c2bdc9ec759423dce') in 0.018451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Materials/TextureBricks/Bricks070_2K-JPG_NormalGL.jpg
+  artifactKey: Guid(1c73bd99e7f3f1d4296ce8e110955cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TextureBricks/Bricks070_2K-JPG_NormalGL.jpg using Guid(1c73bd99e7f3f1d4296ce8e110955cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bee628c863ed2b1c6811e24ceb2d9b') in 0.022103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Materials/TextureBricks/Bricks070_2K-JPG_Roughness.jpg
+  artifactKey: Guid(a80b7037e87c7df459d1f8b778acb404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TextureBricks/Bricks070_2K-JPG_Roughness.jpg using Guid(a80b7037e87c7df459d1f8b778acb404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0371338354b7cb831866b9a61f8f19dd') in 0.016717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Materials/TextureBricks/Bricks070_2K-JPG_NormalDX.jpg
+  artifactKey: Guid(92c40334e5e64474dbb2ff251efef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TextureBricks/Bricks070_2K-JPG_NormalDX.jpg using Guid(92c40334e5e64474dbb2ff251efef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dfae64240c31b706ceeebb5d76c900') in 0.015804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/TextureBricks/Bricks070_2K-JPG_Color.jpg
+  artifactKey: Guid(accd6cbcf5b2b204699cec30e5a530e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/TextureBricks/Bricks070_2K-JPG_Color.jpg using Guid(accd6cbcf5b2b204699cec30e5a530e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ca9d67b59e675e573ec7c4dab9d71c') in 0.016400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 792.517968 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_AmbientOcclusion.jpg
+  artifactKey: Guid(bcab00366ca436047aedcec33bbbdc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_AmbientOcclusion.jpg using Guid(bcab00366ca436047aedcec33bbbdc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20376f006bab6329fc7c44bc98c6395') in 0.022815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_NormalDX.jpg
+  artifactKey: Guid(c4e505d26d180b845bc62ed33b8815c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_NormalDX.jpg using Guid(c4e505d26d180b845bc62ed33b8815c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bda224baf9629d4d50329d761bb4ca') in 0.019693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_Color.jpg
+  artifactKey: Guid(ad7c3df4d98ffef4d826dca50e416583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_Color.jpg using Guid(ad7c3df4d98ffef4d826dca50e416583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7825eec27700efe193f50e832336e9c') in 0.017701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_Roughness.jpg
+  artifactKey: Guid(39858af50bef17842843b4752df46753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_Roughness.jpg using Guid(39858af50bef17842843b4752df46753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8be109dd104b54897b2edc4497108dcf') in 0.014848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 102.285739 seconds.
+  path: Assets/Textures/BrickOutside.mat
+  artifactKey: Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BrickOutside.mat using Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204effa9e87b2bc04ca58d38b554b752') in 0.061566 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 63.607254 seconds.
-  path: Assets/Materials/Border.mat
-  artifactKey: Guid(58c338fefb83b1243a573344927f1972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Border.mat using Guid(58c338fefb83b1243a573344927f1972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41cc11e9b88bc6c272026b7aed88984') in 0.011663 seconds
+  Time since last request: 74.494191 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_NormalDX.jpg
+  artifactKey: Guid(c4e505d26d180b845bc62ed33b8815c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_NormalDX.jpg using Guid(c4e505d26d180b845bc62ed33b8815c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd259e419d5b69e4e6726c271888e1402') in 0.027056 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 132.236155 seconds.
+  path: Assets/Textures/Bricks066_2K-JPG_Color.jpg
+  artifactKey: Guid(ad7c3df4d98ffef4d826dca50e416583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Bricks066_2K-JPG_Color.jpg using Guid(ad7c3df4d98ffef4d826dca50e416583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca69e33870e19459194c1cff95b1ac6') in 0.018219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 62.968488 seconds.
+  path: Assets/Textures/BrickOutside.mat
+  artifactKey: Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BrickOutside.mat using Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a7bf5d55ec1c781212b6ba920844bb') in 0.178876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.115558 seconds.
+  path: Assets/Textures/BrickOutside.mat
+  artifactKey: Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BrickOutside.mat using Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de1efe42b32e576286a0421f0a35d65') in 0.017098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 143.529418 seconds.
+  path: Assets/Textures/BrickOutside.mat
+  artifactKey: Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BrickOutside.mat using Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6279f64dfc714f0f02073e8b341800') in 0.014174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 192.285789 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg
+  artifactKey: Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg using Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d04a940563c1ef3d438ce62fd9382de') in 0.015282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd
+  artifactKey: Guid(fd09957580ac4326916010f1f260975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd using Guid(fd09957580ac4326916010f1f260975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6689ec408c31a39e8e988c944d429c') in 0.016174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51f9b1acb85d26db88c2f6a70fdc8e2') in 0.015095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.161325 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg
+  artifactKey: Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg using Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11fb006f46c90d90985084d0f5db939') in 0.017981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004263 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc56773670ad61665a1d1468320514c') in 0.032663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f305e02e39be85e2631c4793c8812a') in 0.008423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f14033b84d77025a5fbc24bc4dbf86') in 0.009220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.802331 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572d8e6e0d117a11573d4dd70803c87f') in 0.066143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 304.015442 seconds.
+  path: Assets/Textures/BrickOutside.mat
+  artifactKey: Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/BrickOutside.mat using Guid(b2e7ce78844b33140b5fda2fd79cee95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d34a57094c08dcc697f3168fcde03d6') in 0.223537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
