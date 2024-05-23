@@ -6,7 +6,7 @@ public class PlayerCamera : MonoBehaviour
 {
     //Variables
     public Transform player;
-    public float mouseSensitivity = 2f;
+    public float mouseSensitivity = 200f;
     float cameraVerticalRotation = 0f;
     bool lockedCursor = true;
     // Start is called before the first frame update
@@ -24,8 +24,8 @@ public class PlayerCamera : MonoBehaviour
     void Update()
     {
         //Collect mouse input
-        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         //Rotate the Camera around its local X axis
 
