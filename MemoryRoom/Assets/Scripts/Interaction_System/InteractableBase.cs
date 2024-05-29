@@ -9,10 +9,12 @@ namespace ANV
     {
         #region Variables
 
-        public float holdDuration;
-        public bool holdInteract;
-        public bool multipleUse;
-        public bool isInteractable;
+        [SerializeField] private float holdDuration = 1f;
+        [SerializeField] private bool holdInteract = true;
+        [SerializeField] private bool multipleUse = false;
+        [SerializeField] private bool isInteractable = true;
+
+        [SerializeField] private string tooltipMessage = "Interact";
 
         #endregion
 
@@ -22,10 +24,12 @@ namespace ANV
         public bool MultipleUse => multipleUse;
         public bool IsInteractable => isInteractable;
 
+        public string TooltipMessage => tooltipMessage;
+
         #endregion
 
         #region Methods
-        public void OnInteract()
+        public virtual void OnInteract()
         {
             Debug.Log("Interacted with: " + gameObject.name);
         }

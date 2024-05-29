@@ -59,6 +59,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Scripts\Interaction_System\Interactables\DestroyInteractable.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets\Scripts\Interaction_System\InteractionData.cs" />
      <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\OvenOpen\OvenFlip.cs" />
      <Compile Include="Assets\Lamp Assets\Scripts\Lamp.cs" />
+     <Compile Include="Assets\Scripts\Interaction_System\InteractionUIPanel.cs" />
      <Compile Include="Assets\Scripts\Interaction_System\IInteractable.cs" />
      <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Doors\opencloseStallDoor.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />

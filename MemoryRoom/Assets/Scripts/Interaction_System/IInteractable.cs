@@ -14,6 +14,8 @@ namespace ANV
 
         bool IsInteractable { get; }
 
+        string TooltipMessage { get; }
+
         void OnInteract();
     }
 }

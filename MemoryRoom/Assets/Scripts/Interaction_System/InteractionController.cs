@@ -12,6 +12,11 @@ namespace ANV
         public InteractionData interactionData;
 
         [Space]
+        [Header("UI")]
+        [SerializeField] private InteractionUIPanel uiPanel;
+
+
+        [Space]
         [Header("Ray Settings")]
 
         public float rayDistance;
@@ -53,32 +58,24 @@ namespace ANV
                 InteractableBase _interactable = _hit.collider.GetComponent<InteractableBase>();
 
                 if (_interactable != null)
-                {
+
                     if (interactionData.IsEmpty())
                     {
                         interactionData.Interactable = _interactable;
+                        uiPanel.SetTooltip(_interactable.TooltipMessage);
                     }
                     else if (!interactionData.IsSameInteractable(_interactable))
                     {
                         interactionData.Interactable = _interactable;
-
+                        uiPanel.SetTooltip(_interactable.TooltipMessage);
                     }
-                }
-                else
-                {
-                    if (!interactionData.IsEmpty())
-                    {
-                        interactionData.ResetData();
-                    }
-                }
             }
             else
             {
-                if (!interactionData.IsEmpty())
-                {
-                    interactionData.ResetData();
-                }
+                uiPanel.ResetUI();
+                interactionData.ResetData();
             }
+
             Debug.DrawRay(_ray.origin, _ray.direction * rayDistance, Color.red);
         }
 
@@ -99,6 +96,7 @@ namespace ANV
             {
                 m_interacting = false;
                 m_holder = 0f;
+                uiPanel.UpdateProgressBar(0);
             }
 
             if (m_interacting)
@@ -111,7 +109,11 @@ namespace ANV
                 if (interactionData.Interactable.HoldInteract)
                 {
                     m_holder += Time.deltaTime;
-                    if (m_holder >= interactionData.Interactable.HoldDuration)
+
+                    float heldPercent = m_holder / interactionData.Interactable.HoldDuration;
+                    uiPanel.UpdateProgressBar(heldPercent);
+
+                    if (heldPercent > 1)
                     {
                         interactionData.Interact();
                         m_interacting = false;
