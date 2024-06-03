@@ -390,6 +390,7 @@
 "Assets/Scripts/PlayerCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Scriptable_Objects/InteractionInputData.cs"
+"Assets/Scripts/Timer.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
