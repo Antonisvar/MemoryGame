@@ -124,6 +124,7 @@ public class PlayerTrigger : MonoBehaviour
 
     void OnApplicationQuit()
     {
+        // Save the counters to files when the application is closed
         SaveCounter(kitchenCountFilePath, kitchenCount);
         SaveCounter(diningCountFilePath, diningCount);
         SaveCounter(TvRoomCountFilePath, TvRoomCount);
@@ -132,5 +133,7 @@ public class PlayerTrigger : MonoBehaviour
         SaveCounter(Bedroom1CountFilePath, Bedroom1Count);
         SaveCounter(Bedroom2CountFilePath, Bedroom2Count);
         SaveCounter(Bedroom3CountFilePath, Bedroom3Count);
+
+        Debug.Log("file saved on " + Application.persistentDataPath);
     }
 }
