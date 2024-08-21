@@ -379,6 +379,7 @@
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow.cs"
 "Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs"
 "Assets/Lamp Assets/Scripts/Lamp.cs"
+"Assets/Scripts/AppearObjects.cs"
 "Assets/Scripts/InputHandler.cs"
 "Assets/Scripts/Interaction_System/IInteractable.cs"
 "Assets/Scripts/Interaction_System/InteractableBase.cs"
