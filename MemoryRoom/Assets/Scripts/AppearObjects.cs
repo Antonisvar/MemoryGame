@@ -4,9 +4,12 @@ using ANV; // Ensure this namespace is used for the InteractableBase and Interac
 
 public class AppearObjects : MonoBehaviour
 {
-    public List<GameObject> objectsToAppear; // List of objects to instantiate
+    private List<GameObject> objectsToAppear; // List of objects to instantiate
     private List<GameObject> instantiatedObjects; // List to track instantiated objects
     private InteractionController interactionController; // Reference to the InteractionController
+
+    // Public property to access instantiatedObjects
+    public List<GameObject> InstantiatedObjects => instantiatedObjects;
 
     void Start()
     {
