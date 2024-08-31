@@ -383,6 +383,7 @@
 "Assets/Scripts/InputHandler.cs"
 "Assets/Scripts/Interaction_System/IInteractable.cs"
 "Assets/Scripts/Interaction_System/InteractableBase.cs"
+"Assets/Scripts/Interaction_System/Interactables/AppearListInteractable.cs"
 "Assets/Scripts/Interaction_System/Interactables/DestroyInteractable.cs"
 "Assets/Scripts/Interaction_System/InteractionController.cs"
 "Assets/Scripts/Interaction_System/InteractionData.cs"

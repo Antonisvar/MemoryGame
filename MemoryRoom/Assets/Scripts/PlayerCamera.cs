@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    //Variables
     public Transform player;
     public float mouseSensitivity = 200f;
     float cameraVerticalRotation = 0f;
     bool lockedCursor = true;
-    // Start is called before the first frame update
+    private bool canLook = true; // Variable to control if the camera can rotate
+
     void Start()
     {
-        //Lock the cursor
         if (lockedCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -20,24 +19,33 @@ public class PlayerCamera : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Collect mouse input
+        if (!canLook) return; // Prevent camera movement if canLook is false
+
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
-        //Rotate the Camera around its local X axis
 
         cameraVerticalRotation -= inputY;
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
         Camera.main.transform.localRotation = Quaternion.Euler(cameraVerticalRotation, 0f, 0f);
 
-        //Rotate the Player around its Y axis
         player.Rotate(Vector3.up * inputX);
+    }
 
-
-
-
+    // Method to enable or disable camera control
+    public void SetCameraControl(bool enableLook)
+    {
+        canLook = enableLook;
+        if (enableLook)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 }
