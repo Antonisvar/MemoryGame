@@ -29,7 +29,18 @@ public class WeightedRandomizer : MonoBehaviour
         AdjustMaxItemsBasedOnTime(Application.persistentDataPath + "/elapsedTime.txt");
 
         // Load and invert the weights
-        LoadWeightsFromFile("weights.txt");
+        string[] roomFiles = new string[]
+        {
+            Path.Combine(Application.persistentDataPath, "kitchenCount.txt"),
+            Path.Combine(Application.persistentDataPath, "diningCount.txt"),
+            Path.Combine(Application.persistentDataPath, "TvRoomCount.txt"),
+            Path.Combine(Application.persistentDataPath, "Bathroom1Count.txt"),
+            Path.Combine(Application.persistentDataPath, "Bathroom2Count.txt"),
+            Path.Combine(Application.persistentDataPath, "Bedroom1Count.txt"),
+            Path.Combine(Application.persistentDataPath, "Bedroom2Count.txt"),
+            Path.Combine(Application.persistentDataPath, "Bedroom3Count.txt")
+        };
+        LoadWeightsFromFile(roomFiles);
 
         // Find trigger zones and load their positions
         LoadPositionsFromTriggerZones();
@@ -176,28 +187,51 @@ public class WeightedRandomizer : MonoBehaviour
     }
 
 
-    void LoadWeightsFromFile(string filePath)
+    void LoadWeightsFromFile(string[] filePaths)
     {
-        string path = Path.Combine(Application.dataPath, filePath);
-        if (File.Exists(path))
+        // Clear the dictionary before loading new weights
+        roomWeights.Clear();
+
+        foreach (var filePath in filePaths)
         {
-            string[] lines = File.ReadAllLines(path);
-            foreach (var line in lines)
+            string path = Path.Combine(Application.dataPath, filePath);
+
+            if (File.Exists(path))
             {
-                string[] parts = line.Split(' ');
-                if (parts.Length == 2)
+                string[] lines = File.ReadAllLines(path);
+
+                if (lines.Length > 0)
                 {
-                    string roomName = parts[0];
-                    float weight = float.Parse(parts[1]);
-                    roomWeights[roomName] = 1 / weight; // Invert the weight
+                    // Get the total count from the last line (most recent visit count)
+                    string lastCountString = lines[lines.Length - 1];
+
+                    // Parse the visit count from the string
+                    if (int.TryParse(lastCountString, out int visitCount))
+                    {
+                        // Assign the room name based on the file name (you may need to modify this logic)
+                        string roomName = Path.GetFileNameWithoutExtension(filePath);
+
+                        // Invert the weight based on visit count (fewer visits = higher weight)
+                        // Prevent division by zero by ensuring visitCount is at least 1
+                        roomWeights[roomName] = 1f / Mathf.Max(visitCount, 1);
+                    }
+                    else
+                    {
+                        Debug.LogError("Failed to parse visit count from file: " + path);
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Visit count file is empty: " + path);
                 }
             }
-        }
-        else
-        {
-            Debug.LogError("Weights file not found: " + path);
+            else
+            {
+                Debug.LogError("Visit count file not found: " + path);
+            }
         }
     }
+
 
     void LoadPositionsFromTriggerZones()
     {
@@ -205,7 +239,7 @@ public class WeightedRandomizer : MonoBehaviour
 
         int placeableLayer = LayerMask.GetMask("Placeable"); // Get the LayerMask for the "Placeable" layer
         float minDistanceBetweenItems = 1.5f; // Minimum distance between items to avoid overlap
-        int maxAttempts = 100; // Maximum attempts to find a valid position
+        int maxAttempts = 1000; // Maximum attempts to find a valid position
 
         foreach (var triggerZone in roomTriggerZones)
         {
