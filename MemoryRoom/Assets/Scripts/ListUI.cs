@@ -5,7 +5,7 @@ using TMPro;
 
 public class ListUI : MonoBehaviour
 {
-    public AppearObjects appearObjects; // Reference to the DataProvider script
+    public WeightedRandomizer appearObjects; // Reference to the DataProvider script
     private float checkInterval = 0.5f; // Interval to check for initialization
 
     [SerializeField] private GameObject textPrefab; // Prefab for TextMeshProUGUI elements
