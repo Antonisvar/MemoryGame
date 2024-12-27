@@ -119,40 +119,67 @@ public class WeightedRandomizer : MonoBehaviour
 
     void Update()
     {
+        interactionController = FindObjectOfType<InteractionController>();
         if (interactionController == null)
+        {
+            Debug.LogError("No InteractionController found in the scene.");
+        }
+        if (interactionController == null)
+        {
+            Debug.LogError("InteractionController is not set.");
             return;
+        }
+
+        // Check for interactionData and inputData
+        if (interactionController.interactionData == null)
+        {
+            Debug.LogError("interactionData is null.");
+            return;
+        }
+
+        if (interactionController.interactionInputData == null)
+        {
+            Debug.LogError("interactionInputData is null.");
+            return;
+        }
 
         // Get the current interactable object from the InteractionController
         InteractableBase interactable = interactionController.interactionData.Interactable;
 
         if (interactable != null)
         {
+            Debug.Log($"Current Interactable: {interactable.gameObject.name}");
+
             // Check if the interactable object is in the instantiatedObjects list
             if (instantiatedObjects.Contains(interactable.gameObject))
             {
-                // The object is interactable, so we check for interactions
+                // Check if the interaction has occurred
                 if (interactionController.interactionInputData.InteractedClicked)
                 {
-                    // Call the OnInteract method of the interactable object
                     interactable.OnInteract();
-
-                    // Remove the object from the list and destroy it
                     instantiatedObjects.Remove(interactable.gameObject);
-                    Destroy(interactable.gameObject);
+                    Debug.Log($"{interactable.gameObject.name} removed from the instantiatedObjects list.");
+                    Debug.Log("Remaining items in the list: " + instantiatedObjects.Count);
 
                     // Check if the list is empty and close the game if it is
                     if (instantiatedObjects.Count == 0)
                     {
-                        // Optionally save game state or perform other cleanup tasks here
-
-                        // Close the game
+                        Debug.Log("All objects interacted with. Closing the game.");
                         Application.Quit();
 #if UNITY_EDITOR
-                        UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in the editor
+                        UnityEditor.EditorApplication.isPlaying = false;
 #endif
                     }
                 }
             }
+            else
+            {
+                Debug.Log("Interactable object not found in instantiatedObjects list.");
+            }
+        }
+        else
+        {
+            //Debug.Log("No interactable object found.");
         }
     }
 
@@ -263,7 +290,7 @@ public class WeightedRandomizer : MonoBehaviour
 
         int placeableLayer = LayerMask.GetMask("Placeable"); // Get the LayerMask for the "Placeable" layer
         float minDistanceBetweenItems = 1.5f; // Minimum distance between items to avoid overlap
-        int maxAttempts = 1000; // Maximum attempts to find a valid position
+        int maxAttempts = 10000; // Maximum attempts to find a valid position
         float raycastDistance = 20f; // Distance for raycast to ensure it hits the correct surface
 
         foreach (var triggerZone in roomTriggerZones)

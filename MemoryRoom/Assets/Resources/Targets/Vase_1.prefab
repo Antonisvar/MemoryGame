@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5021292786534297782}
   - component: {fileID: 810011026616837294}
   - component: {fileID: 5428090978773398176}
-  - component: {fileID: 3580940950822309325}
+  - component: {fileID: -2882511816025911592}
   m_Layer: 9
   m_Name: Vase_1
   m_TagString: Untagged
@@ -104,9 +104,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.028088385, y: 0.028088378, z: 0.03315252}
-  m_Center: {x: 0, y: 1.2232535e-16, z: 0.017215759}
---- !u!114 &3580940950822309325
+  m_Size: {x: 0.028088385, y: 0.02808838, z: 0.04101215}
+  m_Center: {x: 0, y: -1.0648104e-16, z: 0.017299324}
+--- !u!114 &-2882511816025911592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3874159669744678964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3abe6111e36b1e4f8424f07c3b73cdd, type: 3}
+  m_Script: {fileID: 11500000, guid: cd844bd636edbde47a5a05e54ead4c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   holdDuration: 0

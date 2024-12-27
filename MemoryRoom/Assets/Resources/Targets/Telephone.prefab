@@ -70,33 +70,16 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1064081034635548, guid: d0e229a7ebd926146a169855acc38afc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -373084876043740826}
+      addedObject: {fileID: -8232961945339718863}
     - targetCorrespondingSourceObject: {fileID: 1064081034635548, guid: d0e229a7ebd926146a169855acc38afc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -8232961945339718863}
+      addedObject: {fileID: 2428525229022833435}
   m_SourcePrefab: {fileID: 100100000, guid: d0e229a7ebd926146a169855acc38afc, type: 3}
 --- !u!1 &1407648995522283728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1064081034635548, guid: d0e229a7ebd926146a169855acc38afc, type: 3}
   m_PrefabInstance: {fileID: 1408288075315831244}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-373084876043740826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407648995522283728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3abe6111e36b1e4f8424f07c3b73cdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdDuration: 0
-  holdInteract: 0
-  multipleUse: 0
-  isInteractable: 1
-  tooltipMessage: Interact
 --- !u!65 &-8232961945339718863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -118,3 +101,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.18107378, y: 0.19157696, z: 0.2154007}
   m_Center: {x: -0.0014082305, y: 0.09892368, z: 0.0023762435}
+--- !u!114 &2428525229022833435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407648995522283728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd844bd636edbde47a5a05e54ead4c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdDuration: 0
+  holdInteract: 0
+  multipleUse: 0
+  isInteractable: 1
+  tooltipMessage: Interact
