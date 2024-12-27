@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 121
+  controlID: 136
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -412,10 +412,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 75}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c0f2ffff84f7ffffaaf7ffffb2f7ffffbaf7ffffdaf9ffffe2f9ffffeaf9ffff04fbffffb8600000da600000626400006e640000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: d8930000
+      m_LastClickedID: 37848
+      m_ExpandedIDs: 2c61fffff261fffff062ffffba65ffff1e72ffff629fffffaeb3ffff6ce0ffff04fbffffce640000b68f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -782,9 +782,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.729942, y: 1.6518092, z: -1.9494679}
+    m_Target: {x: -4.446878, y: 5.926122, z: -22.7406}
     speed: 2
-    m_Value: {x: 6.729942, y: 1.6518092, z: -1.9494679}
+    m_Value: {x: -4.4472437, y: 5.926158, z: -22.740797}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -830,20 +830,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.16770697, y: -0.2714796, z: 0.047833342, w: -0.9469585}
+    m_Target: {x: 0.07307641, y: 0.068117686, z: -0.00404696, w: 0.99543816}
     speed: 2
-    m_Value: {x: -0.16763614, y: -0.27136496, z: 0.047813144, w: -0.9465586}
+    m_Value: {x: 0.074536175, y: 0.06808111, z: -0.004147461, w: 0.994883}
   m_Size:
-    m_Target: 1.1226244
+    m_Target: 5.2486453
     speed: 2
-    m_Value: 1.1226244
+    m_Value: 5.2486453
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.0204899
-    m_SpeedNormalized: 0.51
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -920,10 +920,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8e6d0000
-    m_LastClickedID: 28046
-    m_ExpandedIDs: 000000008e6d0000906d000082450100
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 086e0000
+    m_LastClickedID: 28168
+    m_ExpandedIDs: 00000000086e00000a6e0000a06e0000287400002c740000307400003474000038740000768300007a830000828300008e83000092830000a2830000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -951,7 +951,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e6d0000906d0000
+    m_ExpandedIDs: 00000000086e00000a6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
