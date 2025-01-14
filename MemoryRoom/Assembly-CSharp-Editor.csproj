@@ -326,6 +326,9 @@
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\PackageCache\com.unity.visualscripting@1.9.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
@@ -734,14 +737,14 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
@@ -751,6 +754,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
@@ -767,8 +773,14 @@
     <Reference Include="Unity.ProBuilder.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
@@ -790,6 +802,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>

@@ -17,6 +17,8 @@ public class WeightedRandomizer : MonoBehaviour
     private List<GameObject> instantiatedObjects; // List to track instantiated objects
     private List<GameObject> itemPrefabs; // List to store loaded item prefabs
     private InteractionController interactionController; // Reference to the InteractionController
+    public UGS_Analytics ugs_Analytics;
+    private int counterNotValid = 0;
 
     // Public property to access instantiatedObjects
     public List<GameObject> InstantiatedObjects => instantiatedObjects;
@@ -146,16 +148,58 @@ public class WeightedRandomizer : MonoBehaviour
         // Get the current interactable object from the InteractionController
         InteractableBase interactable = interactionController.interactionData.Interactable;
 
-        if (interactable != null)
-        {
-            Debug.Log($"Current Interactable: {interactable.gameObject.name}");
+        //         if (interactable != null)
+        //         {
+        //             Debug.Log($"Current Interactable: {interactable.gameObject.name}");
 
-            // Check if the interactable object is in the instantiatedObjects list
-            if (instantiatedObjects.Contains(interactable.gameObject))
+        //             // Check if the interactable object is in the instantiatedObjects list
+        //             if (instantiatedObjects.Contains(interactable.gameObject))
+        //             {
+        //                 // Check if the interaction has occurred
+        //                 if (interactionController.interactionInputData.InteractedClicked)
+        //                 {
+        //                     interactable.OnInteract();
+        //                     instantiatedObjects.Remove(interactable.gameObject);
+        //                     Debug.Log($"{interactable.gameObject.name} removed from the instantiatedObjects list.");
+        //                     Debug.Log("Remaining items in the list: " + instantiatedObjects.Count);
+
+        //                     // Check if the list is empty and close the game if it is
+        //                     if (instantiatedObjects.Count == 0)
+        //                     {
+        //                         Debug.Log("All objects interacted with. Closing the game.");
+        //                         Application.Quit();
+        // #if UNITY_EDITOR
+        //                         UnityEditor.EditorApplication.isPlaying = false;
+        // #endif
+        //                     }
+        //                 }
+        //             }
+        //             else
+        //             {
+        //                 if (interactionController.interactionInputData.InteractedClicked)
+        //                 {
+        //                     counterNotValid++;
+        //                     Debug.Log("Interactable object not found in instantiatedObjects list.");
+        //                     Debug.Log($"Invalid interaction attempts: {counterNotValid}");
+        //                 }
+        //             }
+        //         }
+        //         else
+        //         {
+        //             //Debug.Log("No interactable object found.");
+        //         }
+
+        // Check if the interaction button was clicked
+        if (interactionController.interactionInputData.InteractedClicked)
+        {
+            if (interactable != null)
             {
-                // Check if the interaction has occurred
-                if (interactionController.interactionInputData.InteractedClicked)
+                Debug.Log($"Current Interactable: {interactable.gameObject.name}");
+
+                // Check if the interactable object is in the instantiatedObjects list
+                if (instantiatedObjects.Contains(interactable.gameObject))
                 {
+                    // Valid interaction
                     interactable.OnInteract();
                     instantiatedObjects.Remove(interactable.gameObject);
                     Debug.Log($"{interactable.gameObject.name} removed from the instantiatedObjects list.");
@@ -171,16 +215,24 @@ public class WeightedRandomizer : MonoBehaviour
 #endif
                     }
                 }
+                else
+                {
+                    // Interactable not in the list
+                    counterNotValid++;
+                    Debug.Log("Interactable object not found in instantiatedObjects list.");
+                    Debug.Log($"Invalid interaction attempts: {counterNotValid}");
+                }
             }
             else
             {
-                Debug.Log("Interactable object not found in instantiatedObjects list.");
+                // No interactable object found
+                counterNotValid++;
+                Debug.Log("No interactable object found.");
+                Debug.Log($"Invalid interaction attempts: {counterNotValid}");
             }
         }
-        else
-        {
-            //Debug.Log("No interactable object found.");
-        }
+
+
     }
 
     void AdjustMaxItemsBasedOnTime(string filePath)
@@ -411,5 +463,10 @@ public class WeightedRandomizer : MonoBehaviour
         }
 
         return itemsToSpawn;
+    }
+
+    private void OnApplicationQuit()
+    {
+        ugs_Analytics.NotValidE(counterNotValid);
     }
 }

@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     float elapsedTime = 0f;
     string filePath;
+    public UGS_Analytics ugs_Analytics;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class Timer : MonoBehaviour
         // Convert elapsedTime to string and append it to the file
         int seconds = Mathf.FloorToInt(elapsedTime);
         string timeString = seconds.ToString();  // Format with 2 decimal places
+        ugs_Analytics.TimeTaken(seconds); // upload the timer event to the analytics cloud
         File.AppendAllText(filePath, timeString + Environment.NewLine);  // Append time to file with newline
     }
 }
