@@ -62,4 +62,18 @@ public class UGS_Analytics : MonoBehaviour
         Debug.Log("Recording event missclick E");
     }
 
+    // Call this when the user finds an item
+    public void LogItemFound(string itemId, int timeTaken)
+    {
+        CustomEvent item_found_avg = new CustomEvent("item_found_avg")
+        {
+            { "item_id", itemId },    // Unique identifier for the item
+            { "time_taken", timeTaken } // Time it took to find this item
+        };
+
+        AnalyticsService.Instance.RecordEvent(item_found_avg);
+
+        Debug.Log($"Logged item_found event: Item {itemId}, Time taken: {timeTaken}s");
+    }
+
 }

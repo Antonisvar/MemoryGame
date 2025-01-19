@@ -203,6 +203,7 @@ public class WeightedRandomizer : MonoBehaviour
                     interactable.OnInteract();
                     instantiatedObjects.Remove(interactable.gameObject);
                     Debug.Log($"{interactable.gameObject.name} removed from the instantiatedObjects list.");
+                    ugs_Analytics.LogItemFound(interactable.gameObject.name, Mathf.FloorToInt(Time.time));
                     Debug.Log("Remaining items in the list: " + instantiatedObjects.Count);
 
                     // Check if the list is empty and close the game if it is
