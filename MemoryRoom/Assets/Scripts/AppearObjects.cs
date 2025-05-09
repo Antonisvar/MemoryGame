@@ -11,6 +11,9 @@ public class AppearObjects : MonoBehaviour
     // Public property to access instantiatedObjects
     public List<GameObject> InstantiatedObjects => instantiatedObjects;
 
+    private UGS_Analytics ugs_Analytics;
+    private int counterNotValid = 0;
+
     void Start()
     {
         // Load objects and initialize lists
@@ -72,6 +75,15 @@ public class AppearObjects : MonoBehaviour
                     }
                 }
             }
+            else
+            {
+                counterNotValid++;
+            }
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        ugs_Analytics.NotValidE(counterNotValid);
     }
 }

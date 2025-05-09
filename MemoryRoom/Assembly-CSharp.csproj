@@ -88,12 +88,14 @@
      <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Z Axis -1\Drawer_Pull_Zopp.cs" />
      <Compile Include="Assets\Brick Project Studio\_BPS Basic Assets\Common\Scripts and Animations\Windows\opencloseWindow1.cs" />
      <Compile Include="Assets\Scripts\Interaction_System\InteractionController.cs" />
+     <Compile Include="Assets\Scripts\WeightedRandomizer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\Triggers\CustomTrigger.cs" />
      <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\TableFlip\TableFlipR.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Brick Project Studio\Apartment Kit\Common\Scripts &amp; Animation\Windows\opencloseWindowApt.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Scripts\Analytics\UGS_Analytics.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -113,26 +115,35 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\Billboard_Instanced.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\ALP Billboard Cross Wind.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+     <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Fantasy Skybox FREE\ReleaseNotes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\Billboard.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\ALP Surface Detail.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\ALP Water Gestner Waves.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\ALP Surface Detail Wind.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\Brick Project Studio\Apartment Kit\Scenes\BPS Apartment Kit.txt" />
+     <None Include="Assets\ALP_Assets\Poplar Tree FREE\Shaders\ALP Cutout Translucency Wind.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
@@ -390,6 +401,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -778,14 +792,14 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
@@ -795,6 +809,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
@@ -811,17 +828,23 @@
     <Reference Include="Unity.ProBuilder.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
@@ -835,6 +858,9 @@
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+        <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
         <HintPath>C:\Users\keray\Unity3d\MemoryGame\MemoryRoom\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
@@ -846,6 +872,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="ALP8310_ControllerGlobal.csproj">
+      <Project>{bab798d6-cc73-7a46-3139-fdfee83bf7b2}</Project>
+      <Name>ALP8310_ControllerGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="ALP8310_ControllerGlobal.Editor.csproj">
+      <Project>{cb87b785-dbe6-496b-db75-05448546818e}</Project>
+      <Name>ALP8310_ControllerGlobal.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
